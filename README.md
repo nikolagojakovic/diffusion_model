@@ -24,10 +24,13 @@ This project demonstrates how to implement and train a **Denoising Diffusion Pro
   x_t = \sqrt{\bar{\alpha}_t} \cdot x_0 + \sqrt{1 - \bar{\alpha}_t} \cdot \epsilon,
   $$
 
-  where:  
-  - \(x_0\) is the original clean image,  
-  - \(\epsilon \sim \mathcal{N}(0, I)\) is Gaussian noise,  
-  - \(\bar{\alpha}_t = \prod_{s=1}^t (1 - \beta_s)\) is the cumulative product of \(\alpha_t = 1 - \beta_t\).
+where:
+
+- \(x_0\) is the original clean image,  
+- \(\epsilon \sim \mathcal{N}(0, I)\) is Gaussian noise,  
+- \(\bar{\alpha}_t = \prod_{s=1}^t (1 - \beta_s)\) is the cumulative product of \(\alpha_t = 1 - \beta_t\).
+
+
 
 - **Batch processing:**  
   The implementation supports efficient batch-wise computation by dynamically indexing noise schedule parameters for each sample's timestep.
