@@ -26,9 +26,10 @@ This project demonstrates how to implement and train a **Denoising Diffusion Pro
 
 where:
 
-- $x_0$ is the original clean image,  
-- $\epsilon \sim \mathcal{N}(0, I)$ is Gaussian noise,  
--$\bar{\alpha}_t = \prod_{s=1}^t (1 - \beta_s)$ is the cumulative product of $\alpha_t = 1 - \beta_t$.
+- \(x_0\) is the original clean image,  
+- \(\epsilon \sim \mathcal{N}(0, I)\) is Gaussian noise,  
+- \(\bar{\alpha}_t = \prod_{s=1}^t (1 - \beta_s)\) is the cumulative product of \(\alpha_t = 1 - \beta_t\).
+
 
 
 
