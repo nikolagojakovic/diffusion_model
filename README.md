@@ -60,4 +60,3 @@ Feel free to customize the noise schedule, image size, or augmentations to suit 
 
 ---
 
-If you'd like, I can help add the reverse diffusion sampling and model training code next.
